@@ -1,0 +1,423 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    background: #000000;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    height: 100vh;
+    overflow: hidden; /* Hide scrollbars */
+}
+.hidden {
+  display: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5em;
+}
+
+.input-section {
+    justify-content: flex-start;
+}
+
+/* Scrollbar */
+.scrollbar {
+  height:auto;
+  overflow:scroll;
+  overflow-x:hidden;
+  border-radius: 10px;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+.scrollbar::-webkit-scrollbar-track {
+  background: #141519;        /* color of the tracking area */
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #27292f;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #141519;  /* creates padding around scroll thumb */
+}
+
+#coin-input {
+    background: black;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border: 4px solid white;
+    text-align: center;
+    color: white;
+    margin: 0;
+  margin-bottom: 10px;
+}
+
+#coin-submit {
+    margin: 0;
+    color: white;
+    background: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 4px solid white;
+    cursor: pointer;
+}
+
+#coin-submit, #coin-input {
+    font-size: 1rem;
+    padding: .5rem;
+    margin-top:5px;
+}
+
+::placeholder {
+    color: white;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    
+    margin-left: auto;
+    text-align: center;
+    margin-right: .5em;
+  
+}
+/*button section  */
+.chart-button  {
+    display: flex;
+    padding: 1em;
+    background-color: #3773F5;
+    font-size: 16px;
+    border-radius: 10px;
+    color: whitesmoke;
+    border: none;
+    margin-left: .5em;
+    cursor: pointer;
+    transition: .25s;
+    font-weight: 700;
+}
+
+.chart-button:hover {
+   background-color: #8aafff 
+}
+
+.chart-button-selected {
+    background: white;
+    color: #3773F5
+}
+
+.wrapper {
+    display: flex;
+}
+
+.underscore-divider{
+    width: 100%;
+    border: 1px solid #3773F5;
+    margin: .5em 0;
+}
+
+.bigger-font{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.card-header{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.85rem;
+  font-weight: 400;
+}
+
+  /* Red 1*/
+
+.one { 
+    margin-right: 1em;
+    width: 60%;
+    border-radius: 15px;
+    background-color: #000000; 
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000000;
+    justify-content: space-between;
+    
+}
+
+.coin-header {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    background: #141519;
+    border-radius: 15px;
+    flex-wrap: wrap; 
+    margin-bottom: 15px;
+}
+
+/* #np-divider{
+   height:50px;
+  margin-right:20px;
+  margin-left:20px;
+  border-color: #213dca
+  border-width: 2px; 
+} */
+
+#np-divider{
+  border-left: 6px solid #3177f4;
+  height: 100%;
+  left: 50%; 
+  top: 0; 
+  margin: 0 1.5em;
+}
+
+
+.price-percentage {
+    display: flex;
+    align-items: baseline;
+    
+}
+
+.price-percentage * {
+    margin: 0;
+}
+
+#ticker {
+    margin: 0;
+    margin-right: .5em;
+    font-size: 3rem;
+}
+
+#coin-price {
+    margin: 0;
+    font-size: 3rem;
+}
+
+#pct-chg {
+    font-size: 2rem;
+    margin-left: .25em;
+}
+
+.chart {
+    margin: 1em 0;
+    max-height: 500px;
+    max-width: 800px;
+    background: #141519;
+    border-radius: 15px;
+    margin-bottom: 15px;
+;}
+
+#piechart {
+    max-width: 230px;
+    max-height: 230px;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.info {
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+}
+
+.info-term{
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.info-def{
+margin-bottom: 10px;
+}
+
+.coin-data {
+    height: 325px;
+    width: 54%;
+    border-radius: 15px;
+    background-color: #141519; 
+    display: flex;
+    margin-right: 1em;
+    margin-top: 15px;
+}
+
+.description {
+    width: 44%;
+    border-radius: 15px;
+    background-color: #141519; 
+    display: flex;
+    height: 325px;
+    padding: 1rem;
+    flex-direction: column; 
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #3773F5;
+}
+
+/* Red 2*/
+.two {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.current-crypto-news {
+    display: flex;
+    flex-direction: column;
+    height: 58%;
+}
+
+.news-containers {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card {
+    display: flex;
+    width: 95%;
+    background: rgba(255, 255, 255, .25);;
+    border-radius: 15px;
+    padding: .5rem;
+    margin: 0 auto;
+    margin-bottom: .5em;
+    justify-content: space-between;
+    transition: .15s ease-in;
+    align-items: center;
+}
+
+.news-card:hover {
+    background: rgba(255, 255, 255, .4);
+}
+
+.news-card-img {
+/*     height: 75px;
+    width: 125px; */
+    width: 25%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.news-card-info {
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-card-title {
+    font-size: 1.5rem;
+    margin: 0;
+    color: white;
+}
+
+.news-card-footer p {
+    font-size: 1rem;
+    margin: 0;
+    color: rgba(255, 255, 255, .8);
+}
+
+.news-sentiment {
+    height: 32%;
+    margin: 1em 0;;
+}
+
+.popular-exchange {
+    height: 7%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.news-sentiment,  .current-crypto-news, .popular-exchange{
+    background: #141519;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.coin-data {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.metric-container {
+    display: flex;
+}
+
+.metric-container-column {
+    width: 33%;
+}
+
+.metric-title {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, .6);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.metric {
+    margin-bottom: 1em;
+}
+
+.data {
+    font-size: 1.15rem;
+    margin-top: 0;
+}
+
+/* #ne-divider{
+  height:50px;
+  border-color: #54575f
+} */
+
+#ne-divider{
+    border-left: 6px solid #3177f4;
+    height: 100%;
+    left: 50%; 
+    top: 0; 
+    margin: 0 1.5em;
+}
+
+.right-h2{
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.left-h2{
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.material-symbols-outlined {
+    color: white
+}
+
+.info-modal {
+    display: flex;
+    align-items: baseline;
+}
+
+.fa-info-circle {
+    color: white;
+    margin: 0;
+    cursor: pointer;
+    transition: .15s;
+}
+
+.fa-info-circle:hover {
+    color: #3773F5;
+}
+
+/* #market-cap-modal {
+    background: #141519;
+    color: white;
+} */
+
+.box {
+    background: #141519;
+    color: white; 
+}

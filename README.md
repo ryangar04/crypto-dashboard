@@ -1,6 +1,6 @@
 # crypto-dashboard
 
 
-![](/crypto-images/coin-demo.move)
+![](/crypto-images/coin-demo.mov)
 
 ![](/crypto-images/coin-chart.png)

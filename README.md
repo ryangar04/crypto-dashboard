@@ -1,6 +1,6 @@
 # crypto-dashboard
 
 
-![](/crypto-images/coin-demo.mov)
+<iframe src="/crypto-images/coin-demo.mov" frameborder="0" allowfullscreen="true"></iframe>
 
 ![](/crypto-images/coin-chart.png)
